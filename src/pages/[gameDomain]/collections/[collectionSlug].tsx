@@ -29,11 +29,7 @@ const CollectionPage: NextPage<CollectionPageProps> = ({ collection }) => {
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
     fallback: 'blocking',
-    paths: [
-      { params: { gameDomain: 'game1', collectionSlug: 'collection1' } },
-      { params: { gameDomain: 'game1', collectionSlug: 'collection2' } },
-      // Add more paths as needed
-    ],
+    paths: [],
   };
 };
 
